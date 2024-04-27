@@ -20,15 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             var href = this.getAttribute('href');
             if (href.startsWith('#')) {
+                e.preventDefault();  // Solo prevenir el comportamiento por defecto si el enlace es interno
                 var targetElement = document.querySelector(href);
                 if (targetElement) {
                     var scrollToPosition = targetElement.offsetTop - navHeight;
                     window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
                 }
             }
+            // De lo contrario, permite la navegación normal (external links will work as expected)
         });
     });
 
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         circle.style.left = e.clientX + 'px';
         circle.style.top = e.clientY + 'px';
     });
-
+    
     const form = document.querySelector(".formcontato__form");
     if (form) {
         form.addEventListener("submit", validateForm);
