@@ -30,7 +30,7 @@ Este portafolio digital presenta una selección de proyectos y habilidades desar
 - **Visualizar Proyectos:** Cada proyecto tiene un resumen y, en algunos casos, un enlace para ver el proyecto en vivo o el código fuente.
 - **Enviar Mensaje:** En la sección de contacto, puedes enviar un mensaje directo utilizando el formulario integrado.
 
-Puedes visitar el portafolio en línea desde [aquí](https://miyinari22.github.io/mi-portafolio/)
+Puedes visitar el portafolio en línea desde [aquí](https://miyinari22.github.io/Portafolio-Alura-Challenge/)
 
 
 ## Acerca de
