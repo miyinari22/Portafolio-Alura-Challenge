@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var circle = document.getElementById('circle');
     var navHeight = document.querySelector('.contenedor-header').offsetHeight;
     var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('#nav ul'); // Asegúrate de que este selector sea correcto.
+    var menu = document.querySelector('#nav ul');
 
     function toggleMenu() {
         menu.classList.toggle('active');
@@ -22,14 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             var href = this.getAttribute('href');
             if (href.startsWith('#')) {
-                e.preventDefault();  // Solo prevenir el comportamiento por defecto si el enlace es interno
+                e.preventDefault();
                 var targetElement = document.querySelector(href);
                 if (targetElement) {
                     var scrollToPosition = targetElement.offsetTop - navHeight;
                     window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
                 }
             }
-            // De lo contrario, permite la navegación normal (external links will work as expected)
         });
     });
 
