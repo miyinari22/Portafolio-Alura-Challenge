@@ -691,7 +691,6 @@ body{
 
 }
 
-
 /* PARTE RESPONSIVA SMARTPHONE*/
 @media (max-width: 400px) {
     .title__div, .about, .skills, .hobbies, .academic, .projects, .contact {
@@ -700,20 +699,18 @@ body{
     }
 
     .menu-toggle {
-        margin-left: 5px; /* Reduce el margen izquierdo del toggle del menú */
+        margin-left: 5px;
     }
 
-    /* Reducir aún más el tamaño de los iconos y el texto en secciones clave */
     .hobbies__img {
-        font-size: 25px; /* Más pequeño para evitar la superposición */
+        font-size: 25px;
     }
 
     .hobbies__name {
-        font-size: 12px; /* Texto más pequeño para adaptarse al espacio disponible */
+        font-size: 12px;
     }
-
-    /* Ajustes adicionales para formularios y botones */
+    
     .formcontato__input, .formcontato__textarea, .button--repo, .button--demo {
-        font-size: 14px; /* Reducir el tamaño de fuente para mejor ajuste */
+        font-size: 14px;
     }
 }
